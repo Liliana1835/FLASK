@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Bienvenido a Restaurante Sabores</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurante Sabores</h1>
+        <p>Bienvenido a la mejor experiencia gastronómica.</p>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/about">Acerca de</a> |
+            <a href="/contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="specialties">
+        <h2>Platos Especiales</h2>
+        <div class="dish">
+            <h3>Pizza Margherita</h3>
+            <img src="{{ url_for('static', filename='pizza-margherita.jpg') }}" alt="Pizza Margherita">
+            <p>Una pizza clásica con mozzarella, tomate fresco y albahaca.</p>
+        </div>
+        <div class="dish">
+            <h3>Pasta Carbonara</h3>
+            <img src="{{ url_for('static', filename='pasta-carbonara.jpg') }}" alt="Pasta Carbonara">
+            <p>Pasta con una rica salsa de huevo, panceta y queso parmesano.</p>
+        </div>
+        <div class="dish">
+            <h3>Postre de Chocolate</h3>
+            <img src="{{ url_for('static', filename='postre-chocolate.jpg') }}" alt="Postre de Chocolate">
+            <p>Un delicioso postre de chocolate fundido con crema de vainilla.</p>
+        </div>
+    </section>
+</body>
+</html>
